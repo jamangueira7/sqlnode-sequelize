@@ -172,9 +172,8 @@ Envio
 ```
 
 - **`GET /users/:userId/techs`**: Rota para listagem de tecnologias de usuarios;
-```
  
- Retorno
+Retorno
  ```
 {
     "id": 2,
@@ -197,6 +196,59 @@ Envio
         }
     ]
 }
+```
+
+- **`GET /report`**: Rota para listagem relatorio;
+ 
+Retorno
+ ```
+[
+    {
+        "name": "João Mangueira",
+        "email": "joao@joao.com",
+        "addresses": [
+            {
+                "id": 1,
+                "zipcode": "00125-555",
+                "street": "Rua X",
+                "number": 178,
+                "createdAt": "2021-02-12T22:39:09.321Z",
+                "updatedAt": "2021-02-12T22:39:09.321Z",
+                "user_id": 2
+            }
+        ],
+        "techs": [
+            {
+                "id": 1,
+                "name": "React",
+                "createdAt": "2021-02-12T23:09:29.521Z",
+                "updatedAt": "2021-02-12T23:09:29.521Z",
+                "user_techs": {
+                    "createdAt": "2021-02-12T23:09:29.539Z",
+                    "updatedAt": "2021-02-12T23:09:29.539Z",
+                    "user_id": 2,
+                    "tech_id": 1
+                }
+            }
+        ]
+    },
+    {
+        "name": "João Mangueira 6",
+        "email": "joao6@joao.com",
+        "addresses": [
+            {
+                "id": 7,
+                "zipcode": "00125-111",
+                "street": "Rua X",
+                "number": 47,
+                "createdAt": "2021-02-12T23:38:09.744Z",
+                "updatedAt": "2021-02-12T23:38:09.744Z",
+                "user_id": 6
+            }
+        ],
+        "techs": []
+    }
+]
 ```
 
 ## 🤔 Como contribuir
