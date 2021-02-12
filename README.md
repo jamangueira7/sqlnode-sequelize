@@ -48,108 +48,23 @@ Projeto para cadastro de rodadas do Brasileirão usando NodeJS, Express, MongoDB
 
 ## 👩🏿‍💻 Rotas
 
-- **`POST auth/register`**: Rota crair um usuario;
+- **`POST /users`**: Rota para cadastrar usuarios;
 Envio
 ```
 {
-    "name": "João",
-    "email": "joao3@joao.com",
-    "password": "123456"
+    "name" :"João Mangueira",
+    "email" :"joao@joao.com"
 }
-
 ```
+
 Retorno
 ```
 {
-    "user": {
-        "_id": "6020684de0458a0c6c2ceaf6",
-        "name": "João",
-        "email": "joao4@joao.com",
-        "createdAt": "2021-02-07T22:23:09.011Z",
-        "__v": 0
-    },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6IjYwMjA2ODRkZTA0NThhMGM2YzJjZWFmNiJ9LCJpYXQiOjE2MTI3MzY1ODksImV4cCI6MTYxMjgyMjk4OX0.vbU6uG_RalGcVEfeEtErqedD8-BjBnKr_DHdy3H-liQ"
-}
-```
-
-- **`POST auth/authenticate`**: Rota para autenticar o usuario;
-Envio
-```
-{
-    "email": "joao3@joao.com",
-    "password": "123456"
-}
-
-```
-Retorno
-```
-{
-    "user": {
-        "_id": "6020684de0458a0c6c2ceaf6",
-        "name": "João",
-        "email": "joao4@joao.com",
-        "createdAt": "2021-02-07T22:23:09.011Z",
-        "__v": 0
-    },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6eyJpZCI6IjYwMjA2ODRkZTA0NThhMGM2YzJjZWFmNiJ9LCJpYXQiOjE2MTI3MzY1ODksImV4cCI6MTYxMjgyMjk4OX0.vbU6uG_RalGcVEfeEtErqedD8-BjBnKr_DHdy3H-liQ"
-}
-```
-
-- **`POST auth/forgot_password`**: Rota para gerar token para mudar senha;
-Envio
-```
-{
-    "email": "jamjs7@gmail.com"
-}
-
-```
-Retorno
-```
-{
-    OK
-}
-```
-
-- **`POST auth/reset_password`**: Rota para para mudar senha;
-Envio
-```
-{
-    "email": "jamjs7@gmail.com",
-    "token": "7bc2403e52028b54fec0aa88357b708646549ce2",
-    "password": "654321"
-}
-```
-
-- **`GET /time`**: Rota para usuarios autenticados verem os times;
-Retorno
-```
-{
-    "times": [
-        {
-            "_id": "6024358ea896930b48bad1ca",
-            "nome": "Vasco da Gama",
-            "createdAt": "2021-02-10T19:35:42.938Z",
-            "__v": 0
-        },
-        {
-            "_id": "60243598a896930b48bad1cb",
-            "nome": "Flamengo",
-            "createdAt": "2021-02-10T19:35:52.174Z",
-            "__v": 0
-        },
-        {
-            "_id": "6024359ca896930b48bad1cc",
-            "nome": "Botafogo",
-            "createdAt": "2021-02-10T19:35:56.851Z",
-            "__v": 0
-        },
-        {
-            "_id": "602435a5a896930b48bad1cd",
-            "nome": "Fluminense",
-            "createdAt": "2021-02-10T19:36:05.325Z",
-            "__v": 0
-        }
-    ]
+    "id": 2,
+    "name": "João Mangueira",
+    "email": "joao@joao.com",
+    "updatedAt": "2021-02-12T22:03:36.431Z",
+    "createdAt": "2021-02-12T22:03:36.431Z"
 }
 ```
 
