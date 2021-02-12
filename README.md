@@ -32,7 +32,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto para cadastro de rodadas do Brasileirão usando NodeJS, Express, MongoDB e Docker.
+Projeto que cadastra usuario, tecnologias do usuario e endreços do ususarios.
+
+Esse projeto foi feito com a aula da Rocketseat [link](https://www.youtube.com/watch?v=Fbu7z5dXcRs).
 
 ## 🚀 Como Rodar
 
