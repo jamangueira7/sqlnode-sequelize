@@ -169,6 +169,34 @@ Envio
 }
 ```
 
+- **`GET /users/:userId/techs`**: Rota para listagem de tecnologias de usuarios;
+```
+ 
+ Retorno
+ ```
+{
+    "id": 2,
+    "name": "João Mangueira",
+    "email": "joao@joao.com",
+    "createdAt": "2021-02-12T22:03:36.431Z",
+    "updatedAt": "2021-02-12T22:03:36.431Z",
+    "techs": [
+        {
+            "id": 1,
+            "name": "React",
+            "createdAt": "2021-02-12T23:09:29.521Z",
+            "updatedAt": "2021-02-12T23:09:29.521Z"
+        },
+        {
+            "id": 2,
+            "name": "JavaScript",
+            "createdAt": "2021-02-12T23:16:17.942Z",
+            "updatedAt": "2021-02-12T23:16:17.942Z"
+        }
+    ]
+}
+```
+
 ## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
