@@ -82,24 +82,27 @@ Retorno
 ]
 ```
 
-- **`POST /time`**: Rota para usuarios autenticados criarem times;
+- **`POST /users/:userId/addresses`**: Rota para cadastros de endereços de usuarios;
 Envio
 ```
 {
-    "nome": "Internacional"    
+    "zipcode" :"00125-000",
+    "street" :"Rua Y",
+    "number" :236
 }
 ```
  
  Retorno
  ```
- {
-     "time": {
-         "_id": "60243a96287fc10f7c39c756",
-         "nome": "Internacional",
-         "createdAt": "2021-02-10T19:57:10.053Z",
-         "__v": 0
-     }
- }
+{
+    "id": 2,
+    "zipcode": "00125-000",
+    "street": "Rua Y",
+    "number": 236,
+    "user_id": 2,
+    "updatedAt": "2021-02-12T22:43:18.827Z",
+    "createdAt": "2021-02-12T22:43:18.827Z"
+}
 ```
 
 - **`PUT /time/:timeId`**: Rota para usuarios autenticados alterarem o time;
