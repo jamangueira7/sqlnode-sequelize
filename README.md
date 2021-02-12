@@ -68,24 +68,20 @@ Retorno
 }
 ```
 
-- **`GET /time/:timeId`**: Rota para usuarios autenticados verem detalhe do time;
+- **`GET /users`**: Rota para listar usuarios;
 Retorno
 ```
-{
-    "_id": "6024358ea896930b48bad1ca",
-    "nome": "Vasco da Gama",
-    "createdAt": "2021-02-10T19:35:42.938Z",
-    "__v": 0
-}
+[
+    {
+        "id": 2,
+        "name": "João Mangueira",
+        "email": "joao@joao.com",
+        "createdAt": "2021-02-12T22:03:36.431Z",
+        "updatedAt": "2021-02-12T22:03:36.431Z"
+    }
+]
 ```
 
-- **`DELETE /time/:timeId`**: Rota para usuarios autenticados excluírem o time;
-Retorno
-```
-{
-    "msg": "Time excluido com sucesso."
-}
-```
 - **`POST /time`**: Rota para usuarios autenticados criarem times;
 Envio
 ```
