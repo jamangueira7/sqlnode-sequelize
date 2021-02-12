@@ -3,7 +3,7 @@ module.exports = {
     host: 'localhost',
     username: 'postgres',
     password: 'docker',
-    database: 'sqlnode',
+    database: 'sqlnode_sequelize',
     define: {
         timestamp: true,
         underscored: true,

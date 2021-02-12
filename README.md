@@ -27,6 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Docker](https://www.docker.com/) - 19.03.8
 - [Yarn](https://yarnpkg.com/) - 1.22.4
 - [Npm](https://www.npmjs.com/) - 6.14.5
+- [Sequelize](https://sequelize.org/) - 6.5.0
 
 
 ## 💻 Projeto
