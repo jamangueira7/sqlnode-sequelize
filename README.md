@@ -136,6 +136,23 @@ Retorno
     ]
 }
 ```
+- **`POST /users/:userId/techs`**: Rota para cadastros de tecnologias de usuarios;
+Envio
+```
+{
+    "name" :"React"
+}
+```
+ 
+ Retorno
+ ```
+{
+    "id": 1,
+    "name": "React",
+    "updatedAt": "2021-02-12T23:09:29.521Z",
+    "createdAt": "2021-02-12T23:09:29.521Z"
+}
+```
 
 ## 🤔 Como contribuir
 
