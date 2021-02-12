@@ -6,6 +6,7 @@ class Tech extends Model {
             name: DataTypes.STRING,
         }, {
             sequelize,
+            tableName: 'techs'
         });
     }
 

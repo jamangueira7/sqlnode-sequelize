@@ -1,4 +1,4 @@
-const Address = require('../models/Address');
+const Tech = require('../models/Tech');
 const User = require('../models/User');
 
 module.exports = {
@@ -18,7 +18,7 @@ module.exports = {
 
     async store(req, res) {
         const { user_id } = req.params;
-        const { zipcode, street, number } = req.body;
+        const { name } = req.body;
 
         const user = await User.findByPk(user_id);
 
@@ -26,13 +26,12 @@ module.exports = {
           return res.status(400).json({ error: 'User not found' });
         }
 
-        const address = await Address.create({
-            zipcode,
-            street,
-            number,
-            user_id,
+        const [ tech ] = await Tech.findOrCreate({
+            where: { name },
         });
 
-        return res.json(address);
+        await user.addTech(tech);
+
+        return res.json(tech);
     }
 }
