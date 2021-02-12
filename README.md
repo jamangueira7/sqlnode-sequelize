@@ -154,6 +154,21 @@ Envio
 }
 ```
 
+- **`DELETE /users/:userId/techs`**: Rota para exclusão de tecnologias de usuarios;
+Envio
+```
+{
+    "name" :"React"
+}
+```
+ 
+ Retorno
+ ```
+{
+    "msg": "Tecnologia deletada com sucesso!"
+}
+```
+
 ## 🤔 Como contribuir
 
 - Faça um fork desse repositório;
